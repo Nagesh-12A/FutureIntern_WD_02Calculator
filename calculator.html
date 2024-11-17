@@ -1,0 +1,112 @@
+ <html>
+<head>
+<title>calculator</title>
+</head>
+<style>
+div{
+border:3px solid red;
+width:350px;
+height:445px;
+margin-left:35%;
+margin-top:160px;
+backround-color:red;
+border-radius:10px;
+box-shadow:0 0 7px gray;
+}
+input{
+
+width:350px;
+height:80px;
+text-align:right;
+font-size:40px;
+border:9px solid red;
+backround-color:lightgray;
+border-radius:10px;
+}
+button{
+
+width:75px;
+height:60px;
+margin-left:7px;
+margin-top:10px;
+font-size:20px;
+backround-color:red;
+border-radius:10px;
+box-shadow:0px 0px 2px 1px;
+}
+button:active{
+background-color:red;
+color:white;
+}
+.eqial{
+width:160px;
+font-size:25px;
+margin-top:15px;
+}
+.dot{
+font-size:25px;
+}
+display{
+border-radius:15px;
+}
+</style>
+<script>
+function seven(x){
+document.getElementById("a").value+=x
+}
+function AC(x){
+document.getElementById("a").value=""
+}
+function calculate(x){
+document.getElementById("a").value+=x
+}
+</script>
+</head>
+<body>
+<!..onclick="AC(this.value)"..>
+
+
+<div>
+<input id="a"class="display">  <!..row1..>
+<button onclick="a.value=a.value.slice(0,-1)"value="CE">DEL</button>
+ <button onclick="calculate(this.value)" value="%">%</button>
+ <button onclick="seven(this.value)"value="/">/</button>
+ <button onclick="calculate(this.value)"value="*">*</button><br/>
+
+
+ 
+
+<!..row2..>
+<button onclick="seven(this.value)"value="7">7</button>
+ <button onclick="seven(this.value)"value="8">8</button>
+ <button onclick="seven(this.value)"value="9">9</button>
+ <button onclick="calculate(this.value)"value="-">-</button><br/>
+
+
+
+ 
+<!..row3..>
+<button onclick="seven(this.value)"value="4">4</button>
+ <button onclick="seven(this.value)"value="5">5</button>
+ <button onclick="seven(this.value)"value="6">6</button>
+ <button onclick="calculate(this.value)"value="+">+</button><br/>
+
+
+
+ 
+<!..row4..>
+<button onclick="seven(this.value)"value="1">1</button>
+ <button onclick="seven(this.value)"value="2">2</button>
+ <button onclick="seven(this.value)"value="3">3</button>
+ <button onclick="calculate(this.value)"value=".">.</button><br/>
+
+ 
+<!..row5..>
+<button onclick="AC(this.value)"value="0">AC</button>
+<button onclick="seven(this.value)"value="0">0</button>
+<button onclick="seven(this.value)"value="00">00</button>
+<button class ="equal"onclick="a.value=eval(a.value)">=</button>
+</div>
+<body>
+</html>
+<!..<button onclick="AC(this.value)"value"">=</button>...>
